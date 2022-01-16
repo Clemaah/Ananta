@@ -1,0 +1,380 @@
+html, body, header, main, footer, section, article, figure, div, ul, li, h1, h2, h3, p, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, li, button, p {
+    font-family: "Poppins", Helvetica, serif;
+}
+
+h2, h3, li, p, a {
+    color: white;
+}
+
+header h1, header a {
+    color: rgb(0, 0, 51);
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(15, 15, 17);
+}
+
+
+html, body {
+    height: 100%;
+}
+
+
+
+    /* ------------ LIENS RESEAUX ------------ */
+.liens_reseaux {
+    display: flex;
+    list-style-type: none;
+}
+
+.liens_reseaux li {
+    position: relative;
+    left: -3px;
+    top: -3px;
+    transition: text-shadow 0.3s ease-in-out, top 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.liens_reseaux li:hover {
+    left: -1px;
+    top: -1px;
+}
+
+.liens_reseaux li:active {
+    left: 0px;
+    top: 0px;
+    transition: none;
+}
+
+
+
+    /* ------------ HEADER ------------ */
+header {
+    height: 100%;
+    background: white url("images/fond_accueil.png") no-repeat right top;
+    background-size: 50%;
+    padding: 40px 150px;
+}
+
+
+
+    /* ------------ HEADER - NAVIGATION ------------ */
+#bandeau-nav {
+    display: flex;
+}
+
+#bandeau-nav h2 {
+    display: none;
+}
+
+#logo {
+    padding-top: 25px;
+    width: 10%;
+}
+
+#logo img {
+    width: 100%;
+}
+
+nav {
+    width: 80%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0 10%;
+}
+
+nav li {
+    font-variant: small-caps;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+nav li:hover {
+    font-weight: 600;
+}
+
+nav li a {
+    color: black;
+}
+
+
+
+/* ------------ HEADER - TITRE + BOUTON ------------ */
+header h1 {
+    font-size: 13em;
+    font-variant: small-caps;
+    margin-top: 10%;
+    margin-bottom: 2%;
+}
+
+header button {
+    background: none;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-size: 1.2em;
+    transition: background 0.3s linear, color 0.3s linear;
+}
+
+header button:hover {
+    background: rgb(17, 22, 77);
+    color: white;
+}
+
+header .liens_reseaux {
+    width: 35%;
+    margin-top: 50px;
+    margin-left: 65%;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    font-size: 5em;
+}
+
+header .liens_reseaux li {
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+header .liens_reseaux li:hover {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+header .liens_reseaux li:active {
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.4);
+}
+
+
+
+    /* ------------ SEPARATEUR ------------ */
+#separateur {
+    background: url("images/separation_header.png") no-repeat top center;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 200px;
+    max-height: 25%;
+}
+
+#separateur hr {
+    display: none;
+}
+
+
+
+    /* ------------ MAIN ------------ */
+main {
+    margin: 75px;
+}
+
+main h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+main p, main li {
+font-weight: 200;
+font-size: 1.6em;
+text-align: justify;
+}
+
+
+
+    /* ------------ MAIN - PRESENTATION ------------ */
+#presentation h2 {
+    margin-bottom: 150px;
+}
+
+#presentation li {
+    margin-top: 10px;
+    margin-left: 5%;
+    padding-left: 2%;
+}
+
+#presentation h3 {
+    margin-bottom: 30px;
+    font-variant: small-caps;
+    font-size: 2.5em;
+    text-decoration: underline solid rgb(66, 108, 190);
+    text-underline-position: under;
+}
+
+.ligne_flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.bloc_texte {
+    padding: 0 5%;
+}
+
+.bloc_texte.alignement_droit {
+    order: 1;
+}
+
+
+
+/* ------------ MAIN - SOUTIEN ------------ */
+#soutien {
+    margin-top: 300px;
+    text-align: center;
+}
+
+#soutien h2 {
+    margin-bottom: 100px;
+}
+
+#soutien p {
+    text-align: center;
+}
+
+#soutien button {
+    margin: 200px 0 150px;
+    padding: 10px 25px;
+    background: none;
+    border: 3px solid white;
+    border-radius: 25px;
+    color: white;
+    font-size: 1.3em;
+    font-weight: 500;
+    transition: background 0.3s linear, color 0.3s linear;
+}
+
+#soutien button:hover {
+    background: white;
+    color: rgb(15, 15, 17);
+}
+
+#soutien figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    background-color: white;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+#soutien figure img {
+    width: 300px;
+}
+
+#soutien .liens_reseaux {
+    width: 40%;
+    margin: 50px auto;
+    justify-content: space-around;
+    font-size: 3em;
+}
+
+#soutien .liens_reseaux li {
+    text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.2);
+}
+
+#soutien .liens_reseaux li:hover {
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.2);
+}
+
+#soutien .liens_reseaux li:active {
+    text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.2);
+}
+
+
+
+/* ------------ FOOTER ------------ */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 50px;
+    border-top: 4px solid white;
+    background-color: rgb(10, 10, 10);
+}
+
+footer h3 {
+    margin-bottom: 25px;
+    font-variant: small-caps;
+    font-size: 2em;
+}
+
+footer li {
+    margin-left: 25px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+#copyrights {
+    width: 100%;
+    margin: 25px;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+
+/* ------------ RESPONSIVE ------------ */
+@media all and (min-width: 0px) and (max-width: 800px) {
+    header {
+        background: white url("images/fond_accueil_responsive.png") no-repeat center 75%;
+        background-size: 90%;
+        padding: 0;
+    }
+
+    #bandeau-nav {
+        position: fixed;
+        top: 0;
+        background-color: rgb(15, 15, 17);
+    }
+
+    #bandeau-nav h2 {
+        display: block;
+    }
+
+    #logo {
+        padding-top: 0;
+        height: 100%;
+        width: auto;
+        border-radius: 100%;
+        background-color: white;
+        overflow: hidden;
+    }
+
+    nav {
+        width: 80%;
+    }
+
+    nav ul {
+        position: absolute;
+    }
+
+    nav li {
+        font-variant: small-caps;
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+
+    nav li:hover {
+        font-weight: 600;
+    }
+
+    nav li a {
+        color: black;
+    }
+
+    * {
+        border: 1px solid red;
+    }
+}
