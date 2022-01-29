@@ -9,7 +9,7 @@
 		<meta name="author" content="Thibault Dassieu, Loris Diaz" />
 		<meta name="viewport" content="width=device-width" />
 
-		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+		<link rel="shortcut icon" type="image/x-icon" href="medias/images/favicon.ico" />
         <link href="https://use.fontawesome.com/releases/v5.11.1/css/all.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="style.css" />
@@ -19,25 +19,22 @@
         <header>
             <div id="bandeau-nav">
                 <figure id="logo">
-                    <img src="images/logo.jpg" alt="Logo Ananta" />
+                    <img src="medias/images/logo.jpg" alt="Logo Ananta" />
                 </figure>
 
                 <h2>Ananta</h2>
 
                 <nav>
                     <ul>
-                        <li><a href="#accueil">Accueil</a></li>
-                        <li><a href="#presentation">Qui sommes nous ?</a></li>
-                        <li><a href="#mission">Notre mission</a></li>
-                        <li><a href="#partenaires">Nos partenaires</a></li>
-                        <li><a href="#soutien">Nous soutenir</a></li>
+                        <li><a href="#presentation" id="page_actuelle">Qui sommes nous ?</a></li>
+                        <li><a href="mission.html">Notre mission</a></li>
+                        <li><a href="partenaires.html">Nos partenaires</a></li>
+                        <li><a href="soutien.html">Nous soutenir</a></li>
                     </ul>
                 </nav>
             </div>
 
             <h1>Ananta</h1>
-
-            <button>En savoir plus</button>
 
             <ul class="liens_reseaux">
                 <li>
@@ -52,6 +49,11 @@
                     <a href="https://www.instagram.com/expedition.ananta/" title="Instagram"><i class="fab fa-instagram"></i></a>
                 </li>
             </ul>
+
+            <video id="background_video" autoplay muted loop>
+                <source src="medias/videos/background.mp4" type="video/mp4">
+            </video>
+            <div id="degrade_video"></div>
         </header>
 
         <div id="separateur"><hr /></div>
@@ -62,7 +64,7 @@
 
                 <section id="origine-nom" class="ligne_flex">
                     <div class="bloc_texte">
-                        <h3>Pourquoi Ananta ?</h3>
+                        <h3>Les origines du nom</h3>
 
                         <p>
                             "Ananta" est un serpent faisant partie des divinités hindouïstes qui, face à ses frères sanguinaires vengeurs, aurait choisi de vivre une vie d'austérité et de zèle. Vishnu, charmé par sa sagesse, décida alors de lui confier la responsabilité de soutenir le monde lors de la destruction des univers. À cette image, nos expéditions auront pour but de soutenir ces lieux fragiles sur le point de disparaître. Les associer à ce nom porteur d'espoir étoit pour nous une évidence.
@@ -70,142 +72,9 @@
                     </div>
 
                     <figure>
-                        <img src="images/illustration1.png" alt="" />
+                        <img src="medias/images/illustration1.png" alt="" />
                     </figure>
                 </section>
-
-                <section id="mission" class="ligne_flex">
-                    <div class="bloc_texte alignement_droit">
-                        <h3>Le but de nos expéditions</h3>
-
-                        <p>
-                            À L'origine de ces expéditions : Thibaut Dassieu et Loris Diaz, deux jeunes plongeurs expérimentés.
-                            <br />
-                            Leur objectif est de réaliser différents projets (plongées insolites, ou autres disciplines) aux quatre coins du monde afin d'attirer l'attention sur des lieux/espèces précises pour lesquels les enjeux écologiques et climatiques sont majeurs. Chaque expédition aura l'ambition d'avoir un impact neutre ou très affaibli sur le milieu parcouru en utilisant au maximum des moyens de déplacement à faible émission de carbone adapté en fonction du budget pour les réaliser.
-                        </p>
-                    </div>
-
-                    <figure>
-                        <img src="images/image_video.png" alt="" />
-                    </figure>
-                </section>
-
-                <section id="enjeux">
-                    <div class="ligne_flex">
-                        <div class="bloc_texte">
-                            <h3>Les enjeux actuels</h3>
-
-                            <p>
-                                Selon L'ONU, d'ici 2050, 250 millions de personnes devront quitter leur terre à cause de l'accélération du réchauffement climatique. Mais ce bouleversement engendrera également de multiples catastrophes -ouragans, cyclones, feux, inondations-, impactant près de 2,5 milliards d'être humains sur notre planète.
-                                <br />
-                                Selon le GIEC, avec un réchauffement supérieur à 2 °C, la fonte des calottes glaciaires du Groënland et de l'Antarctique de l'Ouest pourrait constituer un point de non-retour. En effet, à elles seules, elles contiennent assez d'eau pour provoquer une hausse du niveau de la mer de 13 mètres.
-                            </p>
-
-                            <p>
-                                Dans un précédent rapport, le GIEC estimait à 1.1 mètre la montée du niveau de la mer d'ici à la fin du XXIe siècle, puisque la fonte totale des glaciers paraît tout de même peu probable. Mais d'autres institutions sont plus alarmistes : selon des chercheurs de la National Oceanic and Atmospheric Administration, cette hausse serait plutôt de 25 mètres. Des chercheurs australiens annoncent même une montée des eaux de 3 mètres d'ici à 2100.
-                            </p>
-                        </div>
-
-                        <figure>
-                            <img src="images/illustration2.png" alt="" />
-                        </figure>
-                    </div>
-
-                    <div class="ligne_flex">
-                        <div class="bloc_texte alignement_droit">
-                            <p>
-                                Selon une étude publiée dans la revue scientifique « Nature Climate Change » et menée par des chercheurs de l'université de Cornell (Etats-Unis), la productivité agricole a baissé de plus d'un cinquième en cinquante ans du fait du dérèglement climatique. À ce rythme, ce sont près de 80 millions de personnes supplémentaires dans le monde qui pourraient souffrir de la faim d'ici à 2050 avec un réchauffement global de +2 °C (rappelons pour exemple que la France compte à elle seule 67 millions de personnes).
-                            </p>
-
-                            <p>
-                                Toujours en conséquence de ce réchauffement climatique de +2°C, c'est 130 millions de personnes additionnelles qui pourraient se retrouver dans la pauvreté extrême d'ici à 2030 et, selon la définition de l'ONU, est extrêmement pauvre toute personne vivant avec moins de 1,90 dollar par jour - un peu moins de 1,60 euro au taux de change actuel.
-                            </p>
-
-                            <p>
-                                Les chiffres sont affolants et ce ne sont que quelques exemples. Les conditions de vie vont en se détériorant, nos réactions ne serviront qu'à ralentir les processus, rien ne pourra arrêter cela dorénavant mais nous avons le pouvoir d'agir à chaque échelle.
-                            </p>
-                        </div>
-
-                        <figure>
-                            <img src="images/illustration3.png" alt="" />
-                        </figure>
-                    </div>
-                </section>
-
-                <section id="expedition1" class="ligne_flex">
-                    <div class="bloc_texte">
-                        <h3>Une première expédition</h3>
-
-                        <p>
-                            "The floe edge" à Nunavut (Canada), est l'endroit où l'eau rencontre la glace du rivage au printemps. Il s'agit donc d'un écosystème fascinant où la faune respire, se nourrit et se socialise. Un endroit où il est possible d'observer des groupes de narvals, de bélugas et de baleines boréales qui cheminent à travers les ouvertures des glaciers. Comme les oiseaux et les mammifères ne peuvent pas respirer sous l'eau, ils se rassemblent au bord de la banquise. Les phoques et les morses montent sur la glace pour se reposer ou se cacher des prédateurs marins. Cela en fait un endroit idéal pour trouver notamment des ours polaires. En hiver, la température moyenne oscille aux alentours des -25°C et la température de l'eau est de -1,7°C. En raison de cette très forte activité de la faune sauvage ainsi que du caractère extrême de l'environnement, Nunavut et son "Floe edge" constitue un lieu idéal pour acquérir une expérience solide et commencer les expéditions Ananta.
-                        </p>
-                    </div>
-
-                    <figure>
-                        <img src="images/illustration4.png" alt="" />
-                    </figure>
-                </section>
-
-                <section id="partenaires" class="ligne_flex">
-                    <div class="bloc_texte alignement_droit">
-                        <h3>Nos partenaires</h3>
-
-                        <p>
-                            Pour monter un tel projet nous avons sollicité différents explorateurs de grande renommée qui n'ont pas hésité à nous aider sur certains points importants de notre démarche et qui continuent encore lorsque le besoin le requiert :
-                        </p>
-
-                        <ul>
-                            <li>
-                                Alban Michon (plongeur, membre des expéditions UTP I et II, il réalise également l'expédition "Arktic" ainsi que "le piège blanc"...)
-                            </li>
-
-                            <li>
-                                Thibault Rauby (plongeur des célèbres expéditions Gombessa)
-                            </li>
-
-                            <li>
-                                Loury Lagardère (explorateur - ce dernier à notamment réalisé la traversée du passage du Nord Ouest du Sahara et d'autres défis incroyables...)
-                            </li>
-
-                            <li>
-                                Nous avons également eu des contacts avec Matthieu Tordeur (Pôle Sud en solitaire) et Vincent Colliard pour des questions sur la logistique et la nourriture.
-                            </li>
-                        </ul>
-                    </div>
-
-                    <figure>
-                        <img src="images/illustration5.png" alt="" />
-                    </figure>
-                </section>
-            </article>
-
-            <article id="soutien">
-                <h2>Nous soutenir</h2>
-                <p>
-                    Afin de soutenir nos projets ambitieux, vous pouvez participer en nous aidant financièrement.
-                    <br />
-                    Nous savons à quel point ce geste est précieux, alors nous avons mis en place divers paliers de don pour que vous soyez à nos côtés de façon cohérente au cours de ces aventures.
-                </p>
-
-                <button>En savoir plus</button>
-
-                <figure>
-                    <img src="images/logo.jpg" alt="" />
-                </figure>
-
-                <ul class="liens_reseaux">
-                    <li>
-                        <a href="" title="Youtube"><i class="fab fa-youtube"></i></a>
-                    </li>
-
-                    <li>
-                        <a href="" title="Facebook"><i class="fab fa-facebook"></i></a>
-                    </li>
-
-                    <li>
-                        <a href="" title="Instagram"><i class="fab fa-instagram"></i></a>
-                    </li>
-                </ul>
             </article>
         </main>
 
